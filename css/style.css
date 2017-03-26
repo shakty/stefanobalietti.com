@@ -1,0 +1,13 @@
+div#container { margin: 20px auto; width: 800px }
+p { margin-bottom: 50px }
+dt { font-weight: normal; padding-top: 8px }
+dl { margin-left: +10px }
+dl.publist dt { font-weight: bold }
+dd { margin-left: +10px }
+
+p#summary { color: green }
+
+pre { font-size: 16px; padding: 10px 10px 0 10px; margin-bottom: 0 }
+.bold { font-weight: bold }
+div { font-size: 16px }
+ul { margin-top: 5px }
