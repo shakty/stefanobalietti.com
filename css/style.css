@@ -1,13 +1,60 @@
-div#container { margin: 20px auto; width: 800px }
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400normal');
+
+.cinzel {
+    font-size: 2em;
+    font-family: Cinzel, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nolink {   
+    text-decoration: none;
+    color: black;
+}
+
+.nolink:hover {   
+    text-decoration: none;
+    color: black;
+}
+
+div#container {
+    margin: 20px auto;
+    width: 800px;
+    font-size: 1.3em;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;    
+}
+
+.undertitle {
+    font-style: italic;
+}
+
+
+
 p { margin-bottom: 50px }
+
 dt { font-weight: normal; padding-top: 8px }
+
 dl { margin-left: +10px }
-dl.publist dt { font-weight: bold }
-dd { margin-left: +10px }
 
-p#summary { color: green }
+dl.publist dt {
+    font-weight: bold; font-size: 1.1em;
+}
 
-pre { font-size: 16px; padding: 10px 10px 0 10px; margin-bottom: 0 }
+.dobullet {
+    margin-left: +10px;
+    display: list-item;
+    list-style: none;
+}
+
+.dobullet:before {
+    content: "- ";
+    vertical-align: middle;
+    line-height: 20px;
+}
+
 .bold { font-weight: bold }
-div { font-size: 16px }
+
 ul { margin-top: 5px }
+
+.sec_header {
+    font-family: Cinzel, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+}
