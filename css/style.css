@@ -58,3 +58,20 @@ ul { margin-top: 5px }
 .sec_header {
     font-family: Cinzel, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;  
 }
+
+a.link {
+    width: 40px;
+}
+
+.myButtonLink {
+    margin-left: 5px;
+	display: inline-block;
+	width: 28px;
+	height: 26px;
+	background: url('../images/link2.png') bottom;
+	text-indent: -99999px;
+}
+
+.myButtonLink:hover {
+	background-position: 0 0;
+}
