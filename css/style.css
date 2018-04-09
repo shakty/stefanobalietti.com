@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
 @import url('https://fonts.googleapis.com/css?family=Cinzel:400normal');
 
+.photo {
+  float: left;
+  width: 200px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  box-shadow: 5px 10px #CCC;
+}
+
+.firstimpression {
+  margin-bottom: 40px;
+}
+
 .cinzel {
   font-size: 2em;
   font-family: Cinzel, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
