@@ -18,12 +18,12 @@
   font-family: Cinzel, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.nolink {   
+.nolink {
   text-decoration: none;
   color: black;
 }
 
-.nolink:hover {   
+.nolink:hover {
   text-decoration: none;
   color: black;
 }
@@ -33,7 +33,7 @@ div#container {
   min-width: 320px;
   max-width: 800px;
   font-size: 1.3em;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;    
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .undertitle {
@@ -50,8 +50,12 @@ dt { font-weight: normal; padding-top: 8px }
 
 dl { margin-left: +10px }
 
-dl.publist dt {
+dl.publist dt, dl.courseitemlist dt {
   font-weight: bold; font-size: 1.1em;
+}
+
+dl.courseitemlist dt {
+  margin-top: 30px;
 }
 
 .dobullet {
@@ -71,7 +75,7 @@ dl.publist dt {
 ul { margin-top: 5px }
 
 .sec_header {
-  font-family: Cinzel, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  font-family: Cinzel, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a.link {
