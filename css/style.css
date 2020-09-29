@@ -50,7 +50,7 @@ dt { font-weight: normal; padding-top: 8px }
 
 dl { margin-left: +10px }
 
-dl.publist dt, dl.courseitemlist dt {
+dl.publist dt, dl.courseitemslist dt {
   font-weight: bold; font-size: 1.1em;
 }
 
