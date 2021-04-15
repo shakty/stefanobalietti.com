@@ -94,3 +94,12 @@ a.link {
 .myButtonLink:hover {
   background-position: 0 0;
 }
+
+.menu-links {
+    text-align: center;
+    font-size: 20px;
+}
+
+.menu-links a {
+    margin: 0 10px;
+}
