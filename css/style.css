@@ -2,12 +2,62 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel:400normal');
 
 .photo {
+  margin-top: -20px;
   float: left;
   width: 240px;
   margin-right: 25px;
   margin-bottom: 15px;
   box-shadow: 5px 10px #CCC;
   border-radius: 20px;
+}
+
+a {
+  font-weight: 500;
+}
+
+.header {   
+  font-size: 20px;
+  font-weight: 500;
+  background-image: linear-gradient(to left, #020114e3, #8e8a92);
+  color: transparent;
+  color: rgb(33, 33, 33);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+.chunk-text {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.state_of_crypto_box {
+  background: black;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px auto;
+  width: fit-content;
+  box-shadow: 2px 3px #aa5ce7;
+  transition: transform .4s ease-in-out;
+
+}
+
+.nodegame_box {
+  padding: 10px;
+  margin: 20px auto;
+  width: fit-content;
+  transition: transform .4s ease-in-out;
+}
+
+.state_of_crypto_box:hover,
+.nodegame_box:hover {
+    transform: rotate(4deg);
+}
+
+.state_of_crypto_box:hover
+ {
+  box-shadow: #e85e83;
 }
 
 .firstimpression {
