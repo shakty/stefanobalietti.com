@@ -1,230 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <link rel="icon" type="image/gif" href="../images/icon.gif" />
-  <link rel="stylesheet" href="../css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stefano Balietti | Bio</title>
+  <meta name="description" content="Biography and Curriculum Vitae of Stefano Balietti.">
+  <link rel="icon" type="image/gif" href="../images/icon.gif">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/new_style.css">
+
+  <style>
+    /* Bio specific overrides */
+    .bio-section {
+      margin-bottom: 60px;
+    }
+
+    .bio-dl dt {
+      font-weight: 700;
+      color: #fff;
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+
+    .bio-dl dd {
+      margin-left: 20px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      border-left: 2px solid var(--card-border);
+      padding-left: 15px;
+    }
+
+    .bio-dl dd:hover {
+      border-left-color: var(--accent-primary);
+    }
+  </style>
 </head>
 
-<div id="container">
-  <h2 class="cinzel"><a href="../" class="nolink" alt="Home">Stefano Balietti</a>
+<body>
 
-    <span id="social">
-      <a href="https://twitter.com/balietti?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-        data-show-count="false">Follow
-        @balietti</a>
-      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-      <a href="https://scholar.google.com/citations?user=AMFV7McAAAAJ&hl" target="_blank"><img style="width: 40px"
-          src="../images/scholar-button.png" alt="Scholar Profile" /></a>
-    </span>
-  </h2>
+  <!-- Interactive Background -->
+  <canvas id="network-canvas"></canvas>
 
-  <p class="undertitle">
-    I don't want to achieve immortality through my work; I want to achieve immortality through not dying. (Woody Allen)
-  </p>
-  <p>
-  <h3 class="sec_header">Bio</h3>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../" class="nav-logo">Stefano Balietti</a>
+      <div class="nav-links">
+        <a href="../#about" class="nav-link">About</a>
+        <a href="../#projects" class="nav-link">Projects</a>
+        <a href="../#publications" class="nav-link">Publications</a>
+        <a href="../teaching/" class="nav-link">Teaching</a>
+        <a href="./" class="nav-link active">Bio</a>
+        <a href="https://stefanobalietti.com/balietti-cv.pdf" class="nav-link">CV</a>
+      </div>
+    </div>
+  </nav>
 
-  <dl>
-    <dt><strong>First name / Last name:</strong> Stefano Balietti</dt>
-    <dt><strong>Email:</strong> stefanobalietti.com@gmail.com (yes, twice .com!)</dt>
-  </dl>
+  <div class="container" style="padding-top: 100px; padding-bottom: 50px;">
 
-  </p>
+    <h1 class="section-title scroll-reveal">Biography</h1>
 
+    <p class="hero-subtitle scroll-reveal" style="font-style: italic; max-width: 800px; margin-bottom: 40px;">
+      "I don't want to achieve immortality through my work; I want to achieve immortality through not dying." <br>
+      <span style="font-size: 0.9rem; margin-top: 5px; display:block;">— Woody Allen</span>
+    </p>
 
-  <p>
-  <h3 class="sec_header">Current Position</h3>
+    <!-- Current Position -->
+    <div class="bio-section scroll-reveal">
+      <h2 style="color: var(--accent-primary); margin-bottom: 20px;">Current Position</h2>
+      <div class="card">
+        <h3 style="color: #fff; margin-bottom: 10px;">Postdoc Researcher</h3>
+        <p style="color: var(--text-muted); margin-bottom: 5px;">
+          Chair of <a href="https://www.bwl.uni-mannheim.de/strohmaier/" target="_blank">Data Science in the Economic
+            and Social Sciences</a>
+        </p>
+        <p style="color: var(--text-main); font-weight: 600;">University of Mannheim</p>
+        <p style="font-size: 0.9rem; margin-top: 5px; opacity: 0.8;">01/09/2022 - current</p>
+      </div>
+    </div>
 
-  <dl class="publist">
-    <dt>Postdoc in the group of
-      <a href="https://www.bwl.uni-mannheim.de/strohmaier/" target="_blank">Data Science in the Economic and Social
-        Sciences</a>
-      at the University of Mannheim
-    </dt>
-    <dd>01/09/2022 - current
-    <dd>
-  </dl>
+    <!-- Previous Positions -->
+    <div class="bio-section scroll-reveal">
+      <h2 style="color: var(--accent-primary); margin-bottom: 20px;">Previous Positions</h2>
+      <dl class="bio-dl">
+        <dt>Fellow at MZES (Mannheim Centre for European Social Research)</dt>
+        <dd>01/07/2019 - 31/08/2022</dd>
 
-  </p>
+        <dt>Postdoc at Alfred-Weber Institute of Economics (Heidelberg University)</dt>
+        <dd>01/07/2019 - 31/08/2022</dd>
 
-  <p>
-  <h3 class="sec_header">Previous Postdoctoral Positions</h3>
+        <dt>Postdoc Researcher at Microsoft Research Computational Social Science (NYC)</dt>
+        <dd>23/7/2018 - 30/06/2019</dd>
 
-  <dl class="publist">
+        <dt>Postdoc at Northeastern Network Science Institute</dt>
+        <dd>1/1/2016 - 22/7/2018</dd>
 
-   
+        <dt>Fellow at Harvard Institute for Quantitative Social Science</dt>
+        <dd>1/1/2016 - 22/7/2018</dd>
 
-    <dt>Fellow at the Center for
-      European Social Science Research at Mannheim University
-      (<a href="https://www.mzes.uni-mannheim.de/d7/en" target="_blank">MZES</a>)
-    </dt>
-    <dd> 01/07/2019 - 31/08/2022
-    <dd>
+        <dt>Postdoc at ETH Zurich (Computational Social Science)</dt>
+        <dd>23/07/2015 - 31/12/2015</dd>
+      </dl>
+    </div>
 
-    <dt>Postdoc at the
-      Alfred-Weber Institute of Economics at
-      <a href="https://www.uni-heidelberg.de/fakultaeten/wiso/awi/index_en.html" target="_blank">Heidelberg
-        University</a>
-    </dt>
-    <dd> 01/07/2019 - 31/08/2022
-    <dd>
+    <!-- Education -->
+    <div class="bio-section scroll-reveal">
+      <h2 style="color: var(--accent-primary); margin-bottom: 20px;">Education</h2>
+      <dl class="bio-dl">
+        <dt>PhD, ETH Zurich (Computational Social Science)</dt>
+        <dd>
+          20/11/2011 - 22/07/2015<br>
+          <strong>Dissertation:</strong> <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/102719"
+            target="_blank">The Complex Systems of Science: Computer simulations, laboratory and online
+            experiments</a>.<br>
+          <strong>Topics:</strong> Science of science, scientometrics, agent-based simulations, behavioral economics,
+          public goods games.
+        </dd>
 
+        <dt>Research Assistant, ETH Zurich (Prof. Dirk Helbing)</dt>
+        <dd>
+          17/08/2009 - 20/11/2011<br>
+          Projects: VISIONEER, FuturICT Flagship Initiative.
+        </dd>
 
-    <dt>Postdoc Researcher at Microsoft
-      Research <a href="https://www.microsoft.com/en-us/research/group/computational-social-science/"
-        target="_blank">Computational Social Science</a></dt>
-    <dd>23/7/2018 - 30/06/2019
-    <dd>
+        <dt>MA Economics and Business (110/110 cum laude)</dt>
+        <dd>
+          01/12/2005 - 04/07/2008<br>
+          <strong>Dissertation:</strong> GIG: GARCH in Gretl (Econometrics software package).
+        </dd>
 
-    <dt>Postdoc at Northeastern <a target="_blank" href="http://www.networkscienceinstitute.org">Network Science
-        Institute</a></dt>
-        <dd>1/1/2016 - 22/7/2018
-          <dd>
+        <dt>Internet Science Degree (110/110 cum laude)</dt>
+        <dd>
+          01/07/2002 - 29/11/2005<br>
+          <strong>Dissertation:</strong> The Futur-NK Simulator (Agent-based NK worlds exploration).
+        </dd>
+      </dl>
+    </div>
 
-    <dt>Fellow at Harvard <a target="_blank" href="http://www.iq.harvard.edu">Institute for
-      Quantitative Social
-      Science</a></dt>
+    <!-- Skills -->
+    <div class="bio-section scroll-reveal">
+      <h2 style="color: var(--accent-primary); margin-bottom: 20px;">Skills & Privacy</h2>
+      <div class="card">
+        <h3 style="color: #fff; margin-bottom: 15px;">Languages</h3>
+        <ul
+          style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; color: var(--text-muted);">
+          <li>🇮🇹 Italian (Native)</li>
+          <li>🇬🇧 English (Fluent)</li>
+          <li>🇪🇸 Spanish (Fluent)</li>
+          <li>🇩🇪 German (Intermediate)</li>
+          <li>🇷🇴 Romanian (Intermediate)</li>
+          <li>🇸🇪 Swedish (Basic)</li>
+          <li>🇳🇴 Norwegian (Basic)</li>
+        </ul>
+      </div>
+      <div style="margin-top: 20px; font-size: 0.9rem; color: var(--text-muted);">
+        <strong>Contact:</strong> stefanobalietti.com@gmail.com
+      </div>
+    </div>
 
-    <dd>1/1/2016 - 22/7/2018
-    <dd>
+  </div>
 
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
 
-    <dt>Postdoc in the group of <a target="_blank" href="http://www.coss.ethz.ch">Computational Social Science</a> at
-      ETH Zurich</dt>
-
-    <dd>23/07/2015 - 31/12/2015
-    <dd>
-
-  </dl>
-
-  </p>
-
-  <p>
-  <h3 class="sec_header">Education</h3>
-
-  <dl class="publist">
-
-    <dt>
-      PhD student in the group of <a target="_blank" href="http://www.coss.ethz.ch">Computational Social Science</a> at
-      ETH Zurich
-    </dt>
-
-    <dd>20/11/2011 - 22/07/2015
-    <dd>
-
-      <strong>Dissertation
-        Title: </strong> <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/102719"
-        target="_blank">The Complex Systems of Science:
-        Computer simulations, laboratory and online
-        experiments</a>.<br />
-      <strong>Co-examiners: </strong>Prof. Robert L. Goldstone (Indiana
-      University) and Prof. Andreas Flache (University of Groningen).<br />
-
-      <em>Principal subjects covered:</em>
-
-      <br />Scientific topics: Science of science, scientometrics,
-      sociology of science, evolutionary modeling, agent-based
-      simulations, behavioral economics, public goods experiments,
-      systemic effects of competition and meritocracy, efficiency in
-      coordination games, e.g. congestion games.
-
-      <br />Computational skills: data
-      analysis, econometrics, R, MATLAB, Node.js, JavaScript, JAVA,
-      PHP, Drupal, data mining, distributed systems.
-    </dd>
-
-    <dt>Research Assistant at the Chair of Sociology in particular Modelling and Simulation.
-      Prof. Dirk Helbing, ETH Z&uuml;rich</dt>
-    <dd>17/08/2009 - 20/11/2011
-    <dd>
-      <em>Principal subjects covered:</em>
-      Responsible for the VISIONEER project
-      (http://visioneer.ethz.ch) and the FuturICT Flagship
-      Initiative (http://futurict.eu).
-    </dd>
-
-    <dt>MA Economics and Business 1st Class (Final grade: 110/110 cum laude)</dt>
-    <dd>01/12/2005 - 04/07/2008</dd>
-
-    <dd>
-      <em>Dissertation title</em>: GiG: Garch in Gretl
-      <br />
-      The GIG (GARCH in Gretl) addon package provides access to various GARCH models within the gretl econometric software.
-      This package can be used for estimating models such as the GJR-GARCH, QGARCH, and GARCH-M models, which are designed to capture asymmetries in volatility and the influence of volatility on the mean equation.
-      <br />
-      <em>Supervisor:</em> Prof. Riccard "Jack" Lucchetti
-    </dd>
-    <dd>
-      <em>Principal subjects covered:</em>
-      Econometrics, Corporate Strategies, International Economics,
-      International Finance, International Monetary Economics,
-      Business Programming.
-    </dd>
-
-    <dt>Internet Science Degree 1st class (Final grade: 110/110 cum laude)</dt>
-    <dd>01/07/2002 - 29/11/2005</dd>
-
-    <dd>
-      <em>Dissertation title</em>: The Futur-NK Simulator
-      <br />
-      The Futur-NK Simulator is an agent-based implementation where each agent owns and explores multiple NK worlds, computing fitness landscapes and mutating parameters. Agents are grouped into Populations which collect and store Agents data.
-      <br />
-      <em>Supervisor:</em> Prof. Guido Fioretti
-    </dd>
-    <dd>
-      <em>Principal subjects covered:</em>
-      Algorithms and Data Structures, Computer Programming,
-      Operating Systems, Internet Architecture, Databases, Corporate
-      Finance, Marketing.
-    </dd>
-
-    <dt>Scientific Liceo FM Campana (Final grade: 100/100)</dt>
-    <dd>01/07/1998 - 01/07/2002</dd>
-
-    <dd>
-      <em>Principal subjects covered:</em>
-      Mathematics, Philosophy, Italian Literature, Latin, English,
-      History, Philosophy, Art and History of Art.
-    </dd>
-
-  </dl>
-
-  </p>
-
-  <p>
-  <h3 class="sec_header">Personal Skills and Competences</h3>
-
-  <dl class="publist">
-
-
-    <dt>Languages</dt>
-
-    <dd>Italian: mother tongue</dd>
-    <dd>English: fluent</dd>
-    <dd>Spanish (Castillan): fluent</dd>
-    <dd>German: intermediate</dd>
-    <dd>Romanian: intermediate</dd>
-    <dd>Swedish: basic</dd>
-    <dd>Norwegian: basic</dd>
-
-  </dl>
-
-  </p>
-
-
-
-</div>
-
-<!-- <script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-  ga('create', 'UA-5948485-5', 'auto');
-  ga('send', 'pageview');
-
-</script> -->
+</html>
