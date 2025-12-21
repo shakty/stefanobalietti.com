@@ -246,6 +246,12 @@ ul {
     transform: translateY(-2px);
 }
 
+.brand-highlight {
+    color: var(--accent-primary);
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.4);
+    font-size: 1.1em;
+}
+
 .icon-btn {
     display: inline-flex;
     align-items: center;
