@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     initNetworkBackground();
     initScrollReveal();
+    initQuoteRotator();
 });
 
 /* --- Network Background Animation --- */
@@ -13,15 +14,15 @@ function initNetworkBackground() {
     const ctx = canvas.getContext('2d');
     let width, height;
     let particles = [];
-    
+
     // Config
     const particleCount = window.innerWidth < 768 ? 40 : 80;
     const connectionDistance = 150;
     const mouseDistance = 200;
-    
+
     // Mouse tracking
     let mouse = { x: null, y: null };
-    
+
     window.addEventListener('mousemove', (e) => {
         mouse.x = e.x;
         mouse.y = e.y;
@@ -66,13 +67,13 @@ function initNetworkBackground() {
                 let dx = mouse.x - this.x;
                 let dy = mouse.y - this.y;
                 let distance = Math.sqrt(dx * dx + dy * dy);
-                
+
                 if (distance < mouseDistance) {
                     const forceDirectionX = dx / distance;
                     const forceDirectionY = dy / distance;
                     const force = (mouseDistance - distance) / mouseDistance;
                     const attractionStrength = 0.05;
-                    
+
                     this.vx += forceDirectionX * force * attractionStrength;
                     this.vy += forceDirectionY * force * attractionStrength;
                 }
@@ -95,7 +96,7 @@ function initNetworkBackground() {
     // Animation Loop
     function animate() {
         ctx.clearRect(0, 0, width, height);
-        
+
         // Update and draw particles
         for (let i = 0; i < particles.length; i++) {
             particles[i].update();
@@ -116,13 +117,13 @@ function initNetworkBackground() {
                     ctx.stroke();
                 }
             }
-            
+
             // Draw connections to mouse
             if (mouse.x != null) {
                 let dx = particles[i].x - mouse.x;
                 let dy = particles[i].y - mouse.y;
                 let distance = Math.sqrt(dx * dx + dy * dy);
-                
+
                 if (distance < mouseDistance) {
                     ctx.beginPath();
                     ctx.strokeStyle = `rgba(255, 0, 85, ${1 - distance / mouseDistance})`; // Red connection to mouse
@@ -133,10 +134,10 @@ function initNetworkBackground() {
                 }
             }
         }
-        
+
         requestAnimationFrame(animate);
     }
-    
+
     animate();
 }
 
@@ -157,4 +158,57 @@ function initScrollReveal() {
 
     const elements = document.querySelectorAll('.scroll-reveal');
     elements.forEach(el => observer.observe(el));
+}
+
+// Quote Rotator
+function initQuoteRotator() {
+    const quoteElement = document.getElementById('hero-quote');
+    if (!quoteElement) return;
+
+    const quotes = [
+        {
+            text: "I get up every morning determined to both change the world and have one hell of a good time. Sometimes this makes planning my day difficult.",
+            author: "E.B. White"
+        },
+        {
+            text: "The best way to predict the future is to invent it.",
+            author: "Alan Kay"
+        },
+        {
+            text: "Creativity is intelligence having fun.",
+            author: "Albert Einstein"
+        },
+        {
+            text: "Technology is best when it brings people together.",
+            author: "Matt Mullenweg"
+        },
+        {
+            text: "Simplicity is the ultimate sophistication.",
+            author: "Leonardo da Vinci"
+        },
+        {
+            text: "It's not about ideas. It's about making ideas happen.",
+            author: "Scott Belsky"
+        }
+    ];
+
+    let currentQuoteIndex = 0;
+
+    setInterval(() => {
+        // Add glitch class
+        quoteElement.classList.add('glitch-anim');
+
+        // Change text halfway through animation
+        setTimeout(() => {
+            currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+            const quote = quotes[currentQuoteIndex];
+            quoteElement.innerHTML = `"${quote.text}" <br> <span style="font-size: 0.9rem; margin-top: 10px; display:block;">— ${quote.author}</span>`;
+        }, 300); // 300ms matches the intense part of the glitch
+
+        // Remove class after animation ends
+        setTimeout(() => {
+            quoteElement.classList.remove('glitch-anim');
+        }, 1000); // 1s matches CSS animation duration
+
+    }, 10000); // 10 seconds
 }

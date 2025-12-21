@@ -197,6 +197,15 @@ ul {
     margin-bottom: 2.5rem;
 }
 
+#hero-quote {
+    height: 140px;
+    /* Fixed height to prevent layout jumps */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
 .hero-cta {
     display: inline-flex;
     align-items: center;
@@ -235,6 +244,33 @@ ul {
 .btn-secondary:hover {
     color: #fff;
     transform: translateY(-2px);
+}
+
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+    padding: 10px;
+    /* Larger padding */
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+.icon-btn:hover {
+    color: var(--accent-primary);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--card-border);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 242, 255, 0.2);
+}
+
+.icon-btn svg {
+    display: block;
+    width: 32px;
+    /* Larger icon */
+    height: 32px;
 }
 
 /* About Section */
@@ -468,5 +504,47 @@ footer {
     .nav-links {
         display: none;
         /* simple hiding for now, can add hamburger if needed */
+    }
+}
+
+/* Glitch / Electric Text Animation */
+.glitch-anim {
+    animation: glitch-skew 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    color: var(--accent-primary);
+    text-shadow: 2px 0 var(--accent-secondary), -2px 0 #ffff00;
+}
+
+@keyframes glitch-skew {
+    0% {
+        transform: skew(0deg);
+    }
+
+    10% {
+        transform: skew(-20deg);
+        opacity: 0.8;
+    }
+
+    20% {
+        transform: skew(20deg);
+    }
+
+    30% {
+        transform: skew(-10deg);
+        opacity: 1;
+        text-shadow: 4px 0 var(--accent-secondary), -4px 0 #00ff00;
+    }
+
+    40% {
+        transform: skew(5deg);
+    }
+
+    50% {
+        transform: skew(0deg);
+        text-shadow: none;
+        color: var(--text-muted);
+    }
+
+    100% {
+        transform: skew(0deg);
     }
 }
