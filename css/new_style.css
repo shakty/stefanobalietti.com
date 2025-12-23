@@ -281,6 +281,10 @@ ul {
 
 /* About Section */
 .about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 100px 0;
 }
 
@@ -350,6 +354,10 @@ ul {
 
 /* Projects Section */
 .projects {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 100px 0;
 }
 
@@ -400,7 +408,12 @@ ul {
 }
 
 /* Publications Section */
+/* Publications Section */
 .publications {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 100px 0;
 }
 
