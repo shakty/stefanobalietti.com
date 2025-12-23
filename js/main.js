@@ -189,6 +189,10 @@ function initQuoteRotator() {
         {
             text: "It's not about ideas. It's about making ideas happen.",
             author: "Scott Belsky"
+        },
+        {
+            text: "I don't want to achieve immortality through my work; I want to achieve immortality through not dying.",
+            author: "Woody Allen"
         }
     ];
 
