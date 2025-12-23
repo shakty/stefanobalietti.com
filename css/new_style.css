@@ -296,16 +296,16 @@ ul {
     align-items: start;
 }
 
-.bio-text p {
+.cv-text p {
     margin-bottom: 1.5rem;
     font-size: 1.05rem;
 }
 
-.bio-image-container {
+.cv-image-container {
     position: relative;
 }
 
-.bio-image {
+.cv-image {
     width: 100%;
     max-width: 280px;
     margin: 0 auto;
@@ -318,7 +318,7 @@ ul {
     z-index: 1;
 }
 
-.bio-image-container:hover .bio-image {
+.cv-image-container:hover .cv-image {
     filter: grayscale(0%) contrast(1.1);
     transform: scale(1.03) translateY(-5px);
     box-shadow: 0 20px 40px -10px rgba(0, 242, 255, 0.4);
@@ -326,7 +326,7 @@ ul {
 }
 
 /* Photo Overlay HUD Effect */
-.bio-image-overlay {
+.cv-image-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -342,12 +342,12 @@ ul {
     background: linear-gradient(135deg, rgba(0, 242, 255, 0.2) 0%, rgba(255, 0, 85, 0.2) 100%);
 }
 
-.bio-image-container:hover .bio-image-overlay {
+.cv-image-container:hover .cv-image-overlay {
     opacity: 1;
 }
 
 /* Scanlines */
-.bio-image-overlay::before {
+.cv-image-overlay::before {
     content: '';
     position: absolute;
     top: 0;
@@ -363,7 +363,7 @@ ul {
 }
 
 /* HUD elements (Status line) */
-.bio-image-overlay::after {
+.cv-image-overlay::after {
     content: 'STATUS: [SYSTEM_OK]';
     position: absolute;
     bottom: 15px;
@@ -377,7 +377,7 @@ ul {
 }
 
 /* Scanning Square */
-.bio-image-overlay-box {
+.cv-image-overlay-box {
     position: absolute;
     top: 20%;
     left: 30%;
@@ -390,7 +390,7 @@ ul {
     pointer-events: none;
 }
 
-.bio-image-overlay-box::before {
+.cv-image-overlay-box::before {
     content: 'FACE_ID: VERIFIED';
     position: absolute;
     top: -15px;
@@ -423,7 +423,7 @@ ul {
     }
 }
 
-.bio-image-container::after {
+.cv-image-container::after {
     content: '';
     position: absolute;
     top: 20px;
@@ -442,7 +442,7 @@ ul {
     opacity: 0.5;
 }
 
-.bio-image-container:hover::after {
+.cv-image-container:hover::after {
     transform: translate(15px, 15px) rotate(2deg);
     border-color: var(--accent-secondary);
     opacity: 1;
@@ -612,7 +612,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .bio-image-container {
+    .cv-image-container {
         max-width: 300px;
         margin: 0 auto;
     }
