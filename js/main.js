@@ -210,5 +210,5 @@ function initQuoteRotator() {
             quoteElement.classList.remove('glitch-anim');
         }, 1000); // 1s matches CSS animation duration
 
-    }, 10000); // 10 seconds
+    }, 6000);
 }
