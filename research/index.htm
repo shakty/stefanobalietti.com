@@ -57,18 +57,34 @@
         }
 
         .myButtonLink {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             margin-left: 10px;
-            font-size: 0.8rem;
-            color: var(--accent-secondary);
-            border: 1px solid var(--accent-secondary);
-            padding: 2px 8px;
-            border-radius: 4px;
+            width: 28px;
+            height: 28px;
+            color: var(--accent-primary);
+            border: 1px solid var(--accent-primary);
+            border-radius: 50%;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            background: rgba(0, 242, 255, 0.05);
+            padding: 0;
+        }
+
+        .myButtonLink svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+            display: block;
         }
 
         .myButtonLink:hover {
-            background: var(--accent-secondary);
-            color: #fff;
+            background: var(--accent-primary);
+            color: #0b0d17;
+            box-shadow: 0 0 10px var(--accent-primary);
+            transform: translateY(-2px) scale(1.1);
+            text-decoration: none;
         }
     </style>
 </head>
@@ -113,21 +129,31 @@
                         Majumdar,
                         C.I. Hausladen, and D. Helbing (Eds.), Handbook of Democracy and Artificial Intelligence.</em>
                     Edward Elgar Publishing.
-                    <a class="myButtonLink" href="https://arxiv.org/abs/2511.09263" target="_blank">[Link]</a>
+                    <a class="myButtonLink" href="https://arxiv.org/abs/2511.09263" target="_blank"
+                        aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dd>"Divergence between predicted and actual perception of climate information"
                     A. Tohidi, S. Balietti, S. Fraiberger, and A. Balietti <em>PNAS Nexus</em>, Vol. 4, Issue 3, March
                     2025, pgaf084
                     <a class="myButtonLink" href="https://academic.oup.com/pnasnexus/article/4/3/pgaf084/8082923"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dd>"From Crypto to NTFs: Identifying the New Wave Of Digital Investors"
                     S. Balietti, C. Celebi, and Tercero-Lucas, D. <em>International Review of Financial Analysis</em>
                     <a class="myButtonLink"
-                        href="https://www.sciencedirect.com/science/article/abs/pii/S1057521925002595"
-                        target="_blank">[Link]</a> Vol. 104, Part A, August 2025, 104172
+                        href="https://www.sciencedirect.com/science/article/abs/pii/S1057521925002595" target="_blank"
+                        aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a> Vol. 104, Part A, August 2025, 104172
                 </dd>
 
                 <dt>2024</dt>
@@ -138,7 +164,10 @@
                         Financial Cryptography and Data Security. FC 2024. Lecture Notes in Computer Science</em>, vol
                     14745, pp. 313-330. Springer, Cham.
                     <a class="myButtonLink" href="https://link.springer.com/chapter/10.1007/978-3-031-78679-2_17"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dt>2022</dt>
@@ -146,7 +175,11 @@
                 <dd>"From Online Experiments to Big Experimental Data"
                     S. Balietti. <em>Forthcoming in: T. Yasseri (Ed.), Handbook of Computational Social Science
                         (2023).</em> Edward Elgar Publishing.
-                    <a class="myButtonLink" href="http://ssrn.com/abstract=4151679" target="_blank">[Link]</a>
+                    <a class="myButtonLink" href="http://ssrn.com/abstract=4151679" target="_blank"
+                        aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dt>2021</dt>
@@ -155,34 +188,50 @@
                     Views"
                     S. Balietti, L. Getoor, D. Goldstein, and D. Watts <em>Proceedings of the National Academy of
                         Sciences (PNAS)</em> 118 (52) e2112552118
-                    <a class="myButtonLink" href="https://www.pnas.org/content/118/52/e2112552118"
-                        target="_blank">[Link]</a>
+                    <a class="myButtonLink" href="https://www.pnas.org/content/118/52/e2112552118" target="_blank"
+                        aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dd>"Does Your Experiment Smell?"
                     S. Balietti <em>Communications of the ACM</em> September 2021, Vol. 64 No. 9, Page 107
                     <a class="myButtonLink"
                         href="https://cacm.acm.org/magazines/2021/9/255044-technical-perspective-does-your-experiment-smell/fulltext"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dd>"Incentives, Competition, and Inequality in Markets for Creative Production"
                     S. Balietti and C. Riedl <em>Research Policy</em> 50(4) 104212
                     <a class="myButtonLink"
-                        href="https://www.sciencedirect.com/science/article/abs/pii/S0048733321000160"
-                        target="_blank">[Link]</a>
+                        href="https://www.sciencedirect.com/science/article/abs/pii/S0048733321000160" target="_blank"
+                        aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dd>"Optimal Design of Experiments to Identify Latent Behavioral Types"
                     S. Balietti, B. Klein, and C.Riedl <em>Experimental Economics</em> Volume 24, pp. 772-799
                     <a class="myButtonLink" href="https://link.springer.com/article/10.1007%2Fs10683-020-09680-w"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dt>2020</dt>
                 <dd>"The Human Quest for Discovering Mathematical Beauty in the Arts"
                     S. Balietti <em>Proceedings of the National Academy of Sciences (PNAS)</em> 117 (44) 27073-27075
-                    <a class="myButtonLink" href="https://www.pnas.org/content/117/44/27073" target="_blank">[Link]</a>
+                    <a class="myButtonLink" href="https://www.pnas.org/content/117/44/27073" target="_blank"
+                        aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dt>2018</dt>
@@ -191,7 +240,10 @@
                     S. Balietti, R.O. Murphy, and D. Helbing <em>Social Choice and Welfare</em> Volume 50, Issue 2, pp.
                     213-245
                     <a class="myButtonLink" href="https://link.springer.com/article/10.1007/s00355-017-1081-5"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dt>2017</dt>
@@ -199,31 +251,46 @@
                     Bernauer, and
                     S. Balietti <em>Climatic Change</em> Volume 142, Issue 3-4, pp. 447-461
                     <a class="myButtonLink" href="http://link.springer.com/article/10.1007/s10584-017-1959-3"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dd>"nodeGame: Real-Time, Synchronous, Online Experiments in the Browser" <em>Behavior Research
                         Methods</em> Volume 49, Issue 5, pp. 1696-1715
                     <a class="myButtonLink" href="http://link.springer.com/article/10.3758/s13428-016-0824-z"
-                        target="_blank">[Link 1]</a>
-                    <a class="myButtonLink" href="http://nodegame.org/data/nodegame_paper.pdf" target="_blank">[Link
-                        2]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
+                    <a class="myButtonLink" href="http://nodegame.org/data/nodegame_paper.pdf" target="_blank"
+                        aria-label="View PDF"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M20,2H8A2,2 0 0,0 6,4V16A2,2 0 0,0 8,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M20,16H8V4H20V16M4,6H2V20A2,2 0 0,0 4,22H18V20H4V6M16,12V9C16,8.45 15.55,8 15,8H13V7H16V5H11V15H15A1,1 0 0,0 16,14V12M15,10V11H13V10H15M13,12V14H15V13H13V12Z" />
+                        </svg></a>
                 </dd>
 
                 <dt>2016</dt>
                 <dd>"Peer Review and Competition in the Art Exhibition Game"
                     S. Balietti, R.L. Goldstone, and D. Helbing, <em>Proceedings of the National Academy of Sciences
                         (PNAS)</em> Volume 113, Number 30 (2016) 8414-8419
-                    <a class="myButtonLink" href="http://www.pnas.org/content/113/30/8414.abstract"
-                        target="_blank">[Link]</a>
+                    <a class="myButtonLink" href="http://www.pnas.org/content/113/30/8414.abstract" target="_blank"
+                        aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dt>2015</dt>
                 <dd>"On Disciplinary Fragmentation and Scientific Progress"
                     S. Balietti, M. M&auml;s, D. Helbing <em>PLoS ONE</em> 10(3): e0118747.
                     <a class="myButtonLink"
-                        href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118747"
-                        target="_blank">[Link]</a>
+                        href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118747" target="_blank"
+                        aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dt>2012</dt>
@@ -231,9 +298,15 @@
                     D. Helbing, S. Balietti book chapter in <em>'Social Self-Organization'</em>. Series: Understanding
                     Complex Systems. Helbing, Dirk (Ed.) Springer, (2012) 25-70
                     <a class="myButtonLink" href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2339770"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                     <a class="myButtonLink" href="https://link.springer.com/chapter/10.1007/978-3-642-24004-1_2"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dt>2011</dt>
@@ -242,28 +315,40 @@
                     D. Helbing, S. Balietti, S. Bishop and P. Lukowicz <em>The European Physical Journal - Special
                         Topics</em>. Volume 195, Number 1 (2011), 165-186
                     <a class="myButtonLink" href="http://link.springer.com/article/10.1140/epjst/e2011-01410-7"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dd>"From Social Data Mining to Forecasting Socio-Economic Crises"
                     D. Helbing and S. Balietti <em>The European Physical Journal - Special Topics</em>. Volume 195,
                     Number 1 (2011), 3-68
                     <a class="myButtonLink" href="http://link.springer.com/article/10.1140%2Fepjst%2Fe2011-01401-8"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dd>"From Social Simulation to Integrative System Design"
                     D. Helbing and S. Balietti <em>The European Physical Journal - Special Topics</em>. Volume 195,
                     Number 1 (2011), 69-100
                     <a class="myButtonLink" href="http://link.springer.com/article/10.1140%2Fepjst%2Fe2011-01402-7"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dd>"How to Create an Innovation Accelerator"
                     D. Helbing and S. Balietti <em>The European Physical Journal - Special Topics</em>. Volume 195,
                     Number 1 (2011), 101-136
                     <a class="myButtonLink" href="https://link.springer.com/article/10.1140/epjst/e2011-01403-6"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
 
                 <dt>2010</dt>
@@ -271,7 +356,10 @@
                     D. Helbing and S. Balietti <em>Science and Culture</em> 76(9-10), 399-417
                     <a class="myButtonLink"
                         href="https://www.researchgate.net/publication/48171294_Fundamental_and_Real-World_Challenges_in_Economics"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
             </dl>
         </div>
@@ -284,7 +372,10 @@
                 <dd>Public Perceptions of Cryptomarket Regulation: Investor Profiles and Attitudes; with Svetlana
                     Kremer, Luca Pennella, Merve Yurdabak
                     <a class="myButtonLink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5560112"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
                 <dd>Meme Money, Real People: Decoding the Crypto Memecoin Crowd; with Can Celebi, Luca Pennella, David
                     Tercero-Lucas</dd>
@@ -294,7 +385,10 @@
                 <dd>Tournaments for Collective Intelligence: a Survey of the Literature</dd>
                 <dd>Efficiency Gains in Coordination in Information Poor Environments
                     <a class="myButtonLink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2802049"
-                        target="_blank">[Link]</a>
+                        target="_blank" aria-label="View Paper"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
                 <dd>Paul Feyerabend's Peer Review</dd>
             </dl>
@@ -309,8 +403,11 @@
                     (Understanding Complex Systems)
                     Scharnhorst, Andrea, Boerner, Katy and Besselaar, Peter van den (eds.)
                     Springer-Verlag: Berlin, 2012
-                    <a class="myButtonLink" href="http://jasss.soc.surrey.ac.uk/15/3/reviews/1.html"
-                        target="_blank">[Link]</a>
+                    <a class="myButtonLink" href="http://jasss.soc.surrey.ac.uk/15/3/reviews/1.html" target="_blank"
+                        aria-label="View Review"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                        </svg></a>
                 </dd>
             </dl>
         </div>
